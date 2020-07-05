@@ -2,11 +2,12 @@ package main
 
 import (
 	"fmt"
-	flag "github.com/spf13/pflag"
 	"log"
 	"math/rand"
 	"os"
 	"time"
+
+	flag "github.com/spf13/pflag"
 )
 
 func usage() {

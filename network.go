@@ -2,12 +2,13 @@ package main
 
 import (
 	"fmt"
-	"github.com/vishvananda/netlink"
-	"golang.org/x/sys/unix"
 	"log"
 	"math/rand"
 	"net"
 	"syscall"
+
+	"github.com/vishvananda/netlink"
+	"golang.org/x/sys/unix"
 )
 
 func createMACAddress() net.HardwareAddr {
@@ -194,4 +195,3 @@ func joinContainerNetworkNamespace(containerID string) error {
 	}
 	return nil
 }
-
